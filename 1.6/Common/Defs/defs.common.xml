@@ -490,7 +490,7 @@
       <li>Violent</li>
       <li>Hunting</li>
       <li>Commoner</li>
-      <li>Animals</li>
+      <li>ManualSkilled</li>
       <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
