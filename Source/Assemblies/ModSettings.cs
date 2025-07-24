@@ -26,6 +26,7 @@ namespace ManyJobs
             new WorkType("MJobs_Recruiting", isEnabledByDefault: true),
             new WorkType("MJobs_AnimalTraining", isEnabledByDefault: true),
             new WorkType("MJobs_AnimalTaming", isEnabledByDefault: true),
+            new WorkType("MJobs_Fishing", isEnabledByDefault: true),
             new WorkType("MJobs_Butchering", isEnabledByDefault: true),
             new WorkType("MJobs_Brewing", isEnabledByDefault: true),
             new WorkType("MJobs_Maintaining", isEnabledByDefault: true),
