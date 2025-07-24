@@ -1,12 +1,22 @@
 <ModMetaData>
-  <packageId>CaptainArbitrary.ManyJobs</packageId>
-  <name>Many Jobs</name>
-  <author>CaptainArbitrary</author>
-  <description>Many Jobs attempts to improve the Work tab by creating new work types and rearranging how the game's jobs are categorized into those work types.</description>
-  <url>https://github.com/CaptainArbitrary/ManyJobs</url>
-  <modVersion>1.7.0</modVersion>
+  <packageId>zal.manyjobs</packageId>
+  <name>Many Jobs (Continued)</name>
+  <author>Zaljerem</author>
+  <description>
+Original mod by CaptainArbitrary
+https://steamcommunity.com/sharedfiles/filedetails/?id=3013527266
+https://github.com/CaptainArbitrary/ManyJobs
+MIT License, but all the same: if the original author requests it, I will remove this update.
+
+--
+
+Many Jobs attempts to improve the Work tab by creating new work types and rearranging how the game's jobs are categorized into those work types.
+</description>
+<url></url>
+<modVersion IgnoreIfNoMatchingField="True">1.0.2</modVersion>
   <supportedVersions>
-    <li>1.4</li>
+    <li>1.5</li>
+	 <li>1.6</li>
   </supportedVersions>
   <incompatibleWith>
     <li>CodeOptimist.JobSplitter</li>
@@ -16,5 +26,32 @@
   </incompatibleWith>
   <loadAfter>
     <li>bustedbunny.recylethis</li>
+<li>Mlie.ZenGarden</li>
+<li>dubwise.dubsbadhygiene</li>
+<li>fluffy.colonymanager</li>
+<li>fluffy.fluffybreakdowns</li>
+<li>oskarpotocki.vanillafactionsexpanded.core</li>
+<li>vanillaexpanded.vfesecurity</li>
+<li>unlimitedhugs.allowtool</li>
+<li>weilbyte.snapout</li>
+<li>orion.hospitality</li>
+<li>haplo.miscellaneous.robots</li>
+<li>alaestor.miscrobots.plusplus</li>
+<li>oskarpotocki.vfe.mechanoid</li>
+<li>wvc.sergkart.races.biotech</li>
+<li>vanillaexpanded.vmemese</li>
+<li>sarg.alphabiomes</li>
+<li>sarg.alphagenes</li>
+<li>biomesteam.biomescaverns</li>
+<li>redmattis.geneextractor</li>
+<li>pyro.tieredmechs</li>
+<li>danielwedemeyer.generipper</li>
+<li>vanillaexpanded.vbrewe</li>
+<li>vanillaexpanded.vbrewecandt"</li>
+<li>oskarpotocki.vfe.insectoid</li>
+<li>vanillaexpanded.vplantsemore</li>
+<li>vanillaracesexpanded.android</li>
+<li>vanillaracesexpanded.sanguophage</li>
+<li>smashphil.vehicleframework</li>
   </loadAfter>
 </ModMetaData>

@@ -1,18 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-    <OutputPath>../../1.4/Assemblies/</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyName>ManyJobs</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>none</DebugType>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3704"/>
-  </ItemGroup>
-
+  <PropertyGroup />
+<ItemGroup>
+<PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*-*" />    
+  </ItemGroup> 
 </Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">
+    <workType>MJobs_Harvesting</workType>
+    <operations>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "ZEN_GrowerHarvestSecondary"]/workType</xpath>
+        <value>
+          <workType>MJobs_Harvesting</workType>
+        </value>
+      </li>
+
+	 <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "ZEN_GrowerSowSecondary"]/workType</xpath>
+        <value>
+          <workType>MJobs_Harvesting</workType>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+
+</Patch>
