@@ -1,7 +1,4 @@
-[![License](https://img.shields.io/github/license/CaptainArbitrary/ManyJobs?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyJobs/blob/main/LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/CaptainArbitrary/ManyJobs?style=for-the-badge&label=GitHub%20Release)](https://github.com/CaptainArbitrary/ManyJobs/releases)
-[![Join me on Discord](https://img.shields.io/badge/join_me_on-discord-blue?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/4SrvKaQTB3)
-[![Buy me a coffee](https://shields.io/badge/ko--fi-Buy_me_a_coffee-ff5f5f?logo=ko-fi&logoColor=white&style=for-the-badge)](https://ko-fi.com/T6T1NNFAL)
+Many Jobs (Continued)
 
 ## Description
 
