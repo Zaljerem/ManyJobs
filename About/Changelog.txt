@@ -4,3 +4,4 @@
 
 1.0.2 - 7/13/2025 - updated to 1.6
 
+1.0.3 - 7/26/2025 - added Fishing worktype for Odyssey, thanks llunak!
