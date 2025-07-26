@@ -271,6 +271,24 @@
 
   <!-- #endregion -->
 
+  <!-- #region MJobs_Fishing -->
+
+  <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">
+    <workType>MJobs_Fishing</workType>
+    <operations>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName = "MJobs_Fishing"]/visible</xpath>
+        <value>
+          <visible>true</visible>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+
+  <!-- #endregion -->
+
   <!-- #region MJobs_Maintaining -->
 
   <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">

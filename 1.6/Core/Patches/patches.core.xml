@@ -33,6 +33,7 @@
       <!-- <Cooking>7</Cooking> -->
       <MJobs_Brewing>7</MJobs_Brewing>
       <!-- <Hunting>7</Hunting> -->
+      <MJobs_Fishing>7</MJobs_Fishing>
       <MJobs_Maintaining>10</MJobs_Maintaining>
       <MJobs_Deconstructing>10</MJobs_Deconstructing>
       <!-- <Construction>10</Construction> -->
@@ -739,6 +740,13 @@
     <xpath>Defs/WorkTypeDef[defName = "Cooking"]/description</xpath>
     <value>
       <description>Prepare meals.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/WorkTypeDef[defName = "Hunting"]/description</xpath>
+    <value>
+      <description>Kill animals which are designated to be hunted.</description>
     </value>
   </Operation>
 
