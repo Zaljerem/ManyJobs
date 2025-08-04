@@ -8,28 +8,14 @@
     <operations>
 
       <li Class="PatchOperationReplace">
-        <xpath>Defs/WorkGiverDef[defName = "IP_InsertFirstIngredient"]/workType</xpath>
+        <xpath>Defs/WorkGiverDef[defName = "PS_BringToProcessor"]/workType</xpath>
         <value>
           <workType>MJobs_PriorityHauling</workType>
         </value>
-      </li>
+      </li>    
 
       <li Class="PatchOperationReplace">
-        <xpath>Defs/WorkGiverDef[defName = "IP_InsertSecondIngredient"]/workType</xpath>
-        <value>
-          <workType>MJobs_PriorityHauling</workType>
-        </value>
-      </li>
-
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/WorkGiverDef[defName = "IP_InsertThirdIngredient"]/workType</xpath>
-        <value>
-          <workType>MJobs_PriorityHauling</workType>
-        </value>
-      </li>
-
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/WorkGiverDef[defName = "IP_RemoveProduct"]/workType</xpath>
+        <xpath>Defs/WorkGiverDef[defName = "PS_PickUpProcessor"]/workType</xpath>
         <value>
           <workType>MJobs_PriorityHauling</workType>
         </value>
