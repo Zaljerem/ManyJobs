@@ -7,3 +7,5 @@
 1.0.3 - 7/26/2025 - added Fishing worktype for Odyssey, thanks llunak!
 
 1.0.4 - 8/4/2025 - fix to VE compat
+
+1.0.5 - 8/31/2025 - revert fishing work type changes, now in vanilla
