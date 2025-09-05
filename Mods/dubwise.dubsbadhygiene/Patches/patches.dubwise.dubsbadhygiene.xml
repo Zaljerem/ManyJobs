@@ -86,6 +86,24 @@
 
   <!-- #endregion -->
 
+  <!-- #region MJobs_Undertaking -->
+
+  <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">
+    <workType>MJobs_Undertaking</workType>
+    <operations>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPit"]/workType</xpath>
+        <value>
+          <workType>MJobs_Undertaking</workType>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+
+  <!-- #endregion -->
+
   <!-- #region MJobs_Maintaining -->
 
   <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">
