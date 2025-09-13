@@ -93,6 +93,57 @@
 
   <!-- #endregion -->
 
+  <!-- #region MJobs_Undertaking -->
+
+  <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">
+    <workType>MJobs_Undertaking</workType>
+    <operations>
+
+      <!-- Make a copy of DoBillsBurnPit and rename it to DoBillsBurnPitUndertake.
+           This is because some bills are not undertaking (e.g. burn apparel). -->
+      <li Class="ManyJobs.PatchOps.PatchOperationDuplicate">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPit"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPit"][2]/defName</xpath>
+        <value>
+            <defName>DoBillsBurnPitUndertake</defName>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPitUndertake"]/workType</xpath>
+        <value>
+          <workType>MJobs_Undertaking</workType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "CremateCorpse"]</xpath>
+        <value>
+          <requiredGiverWorkType>MJobs_Undertaking</requiredGiverWorkType>
+        </value>
+      </li>
+
+      <!-- Change label of the work (for prioritizing work) so that the two works are different. -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPitUndertake"]/verb</xpath>
+        <value>
+          <verb>cremate at</verb>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsBurnPitUndertake"]/gerund</xpath>
+        <value>
+          <gerund>cremating at</gerund>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+
+  <!-- #endregion -->
+
   <!-- #region MJobs_Maintaining -->
 
   <Operation Class="ManyJobs.PatchOps.IfWorkTypeIsEnabled">

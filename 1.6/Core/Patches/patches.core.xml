@@ -254,10 +254,43 @@
         </value>
       </li>
 
+      <!-- Make a copy of DoBillsCremate and rename it to DoBillsCremateUndertake.
+           This is because some bills are not undertaking (e.g. burn apparel). -->
+      <li Class="ManyJobs.PatchOps.PatchOperationDuplicate">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremate"]</xpath>
+      </li>
       <li Class="PatchOperationReplace">
-        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremate"]/workType</xpath>
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremate"][2]/defName</xpath>
+        <value>
+            <defName>DoBillsCremateUndertake</defName>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremateUndertake"]/workType</xpath>
         <value>
           <workType>MJobs_Undertaking</workType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName = "CremateCorpse"]</xpath>
+        <value>
+          <requiredGiverWorkType>MJobs_Undertaking</requiredGiverWorkType>
+        </value>
+      </li>
+
+      <!-- Change label of the work (for prioritizing work) so that the two works are different. -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremate"]/verb</xpath>
+        <value>
+          <verb>work at</verb>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsCremate"]/gerund</xpath>
+        <value>
+          <gerund>working at</gerund>
         </value>
       </li>
 
