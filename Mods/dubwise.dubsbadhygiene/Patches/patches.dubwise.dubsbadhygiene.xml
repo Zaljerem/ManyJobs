@@ -15,6 +15,13 @@
       </li>
 
       <li Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DBHAdministerFluidsWarden"]/workType</xpath>
+        <value>
+          <workType>MJobs_Caring</workType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
         <xpath>Defs/WorkGiverDef[defName = "washPatient"]/workType</xpath>
         <value>
           <workType>MJobs_Caring</workType>
